@@ -623,10 +623,10 @@ body.page-id-3235 a {
 }
 
 .site-title {
-  position: absolute;
+  position: relative;
+  margin: 0;
   font-size: 42px;
   font-family: MyAmethyst;
-  margin: auto;
 }
 
 .site-description {
@@ -691,15 +691,15 @@ body.page-id-3235 a {
   padding-left: 25px;
 }
 
-body.page-id-3235 .social-icons .navbar-toggler-icon #navbarToggler {
+body.page-id-3235 .social-icons {
   color: white !important;
 }
 
-body.page-id-3235 .navbar {
-  background-color: rgba(255, 255, 255, 0.07) !important;
+body.page-id-3235 .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6) !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .social-menu {
     display: none;
   }

@@ -20,44 +20,42 @@
 
 				<header id="masthead" class="">
 
-					<nav class="navbar navbar-expand-md navbar-light" role="navigation">
+					<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
   						<div class="container">
-      						<!-- Brand and toggle get grouped for better mobile display -->
-  							<?php if( has_custom_logo()) {
-							the_custom_logo();
-		 					} else { ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-							<?php $cb_photography_description = get_bloginfo( 'description', 'display' );
-							if ( $cb_photography_description || is_customize_preview() ) :?>
-							<p class="site-description"><?php echo $cb_photography_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-							<?php endif; } ?>
-
-				    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-				    			<span class="navbar-toggler-icon"></span>
-							</button>
+      							<!-- Brand and toggle get grouped for better mobile display -->
+  								<?php if( has_custom_logo()) {
+								the_custom_logo();
+		 						} else { ?>
+								<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+								<?php $cb_photography_description = get_bloginfo( 'description', 'display' );
+								if ( $cb_photography_description || is_customize_preview() ) :?>
+								<p class="site-description"><?php echo $cb_photography_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+								<?php endif; } ?>
+				    					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				    						<span class="navbar-toggler-icon"></span>
+										</button>
 							
-        						<?php
-        							wp_nav_menu( array(
-        						    	'theme_location'    => 'menu-1',
-        						    	'depth'             => 2,
-        						    	'container'         => 'div',
-        						    	'container_class'   => 'collapse navbar-collapse',
-        						    	'container_id'      => 'navbarToggler',
-        						    	'menu_class'        => 'navbar-nav ml-auto',
-        						    	'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-        						    	'walker'            => new WP_Bootstrap_Navwalker(),
-       								) );
-								?>
+        									<?php
+        										wp_nav_menu( array(
+        									    	'theme_location'    => 'menu-1',
+        									    	'depth'             => 2,
+        									    	'container'         => 'div',
+        									    	'container_class'   => 'collapse navbar-collapse',
+        									    	'container_id'      => 'navbarToggler',
+        									    	'menu_class'        => 'navbar-nav ml-auto',
+        									    	'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+        									    	'walker'            => new WP_Bootstrap_Navwalker(),
+       											) );
+											?>
 		
-							<div id="socialmenu" class="social-menu">
-								<ul class="social-icons">
-										<li class="social-menu-twitter"><a href="https://twitter.com/ciddi89" target="_blank"><i class="fab fa-twitter"></i></a></li>
-										<li class="social-menu-facebook"><a href="https://facebook.com/photobc2017" target="_blank"><i class="fab fa-facebook"></i></a></li>
-										<li class="social-menu-instagram"><a href="https://instagram.com/christian_behrends_89" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								</ul>
+										<div id="socialmenu" class="social-menu">
+											<ul class="social-icons">
+													<li class="social-menu-twitter"><a href="https://twitter.com/ciddi89" target="_blank"><i class="fab fa-twitter"></i></a></li>
+													<li class="social-menu-facebook"><a href="https://facebook.com/photobc2017" target="_blank"><i class="fab fa-facebook"></i></a></li>
+													<li class="social-menu-instagram"><a href="https://instagram.com/christian_behrends_89" target="_blank"><i class="fab fa-instagram"></i></a></li>
+											</ul>			
 							</div>
-
-    					</div>
+						</div>
 					</nav>
 				</header><!-- #masthead -->
 
