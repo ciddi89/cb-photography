@@ -1,0 +1,25 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-size: 1rem;
+	line-height: $font__line-height-body;
+}
+
+.wp-block-quote {
+	display: block;
+	position: relative;
+	font-style: italic;
+	border-left: 3px solid #000;
+	margin: 20px 40px;
+	padding-left: 10px;
+}
+
+@import "headings";
+@import "copy";
+@import "footer";
+@import "mainmenu"

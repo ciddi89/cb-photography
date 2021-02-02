@@ -1,0 +1,56 @@
+.sticky {
+	display: block;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.nav-links {
+	margin-top: 10px;
+}
+
+.site-main {
+	overflow: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.blog-header {
+	margin-top: 10px;
+}
+
+.blog-content {
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.startimage {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	z-index: -1;  
+}
+
+body.page-id-3235 .entry-title{ display: none; }
+
+@media screen and (min-width: 37.5em) {
+.card-img {
+	max-width: 18rem;
+}
+}
+
+@media screen and (max-width: 37.5em) {
+	.archive-btn {
+		display: flex;
+		justify-content: center;
+	}
+	}

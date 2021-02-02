@@ -1,0 +1,49 @@
+.widget select {
+  max-width: 100%;
+}
+
+/**
+ * Widgets > Borders
+ */
+.widget_categories li,
+.widget_recent_entries li,
+.widget_archive li,
+.widget_recent_comments li,
+.widget-recent-posts-icons li,
+.site-footer .widget_nav_menu li,
+.widget_meta li {
+  padding: 6px 0;
+  border-bottom: 1px solid #e9e9e9;
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.widget_categories li:first-child,
+.widget_recent_entries li:first-child,
+.widget_archive li:first-child,
+.widget_recent_comments li:first-child,
+.widget-recent-posts-icons li:first-child,
+.site-footer .widget_nav_menu li:first-child,
+.widget_meta li:first-child {
+  border-top: 1px solid #e9e9e9;
+}
+
+.widget_categories ul,
+.widget_recent_entries ul,
+.widget_archive ul,
+.widget_recent_comments ul,
+.widget-recent-posts-icons ul,
+.site-footer .widget_nav_menu ul,
+.widget_meta ul {
+  font-size: 14px;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .widget-area {
+    border-left: 1px solid #e9e9e9;
+    padding-left: 30px;
+    float: none;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

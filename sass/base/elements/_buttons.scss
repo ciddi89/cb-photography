@@ -1,0 +1,29 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+		color: #343a40;
+		background-color: $color__background-button;
+		border-color: $color__border-button;
+		padding: .25rem .5rem;
+		font-size: .875rem;
+		line-height: 1.5;
+		border-radius: .2rem;
+
+	&:hover {
+		color: $color__text-button-hover;
+		background-color: $color__background-button-hover; 
+		border-color: $color__border-button;
+		text-decoration: none;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}

@@ -1,0 +1,60 @@
+	.site-footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		align-items: center;
+		background-color: #1C1F21;
+		color: #fff;
+		clear: both;
+		border-top: 1px solid rgba(0, 0, 0, 0.20);
+
+		a {
+			color: #fff !important;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $color__link-hover !important;
+			}
+		}
+	}
+
+	body.page-id-3235 .site-footer { background-color: rgba(0, 0, 0, 0.0)!important; }
+
+	#footermenu {
+		height: 3.5rem;
+		display: grid;
+		align-items: center;
+	}
+
+	#footer-siteinfo {
+		display: flex;
+		align-items: center;
+	}
+
+/*------------------------------------*
+	Small Devices Footer <768px
+*------------------------------------*/
+@media only screen and (max-width: 768px) {
+
+	.site-footer {
+		height: 100%;
+		padding-bottom: 0.8rem;
+	}
+
+	footer .site-info a {
+		margin: 0px 3px 0px 3px;
+	}
+
+
+  footer .footer-menu {
+    justify-content: center !important;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  footer .site-info {
+  	display: flex;
+    justify-content: center !important;
+  }
+}

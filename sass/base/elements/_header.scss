@@ -1,0 +1,93 @@
+@font-face {
+	font-family: MyAmethyst;
+	src: url(fonts/Amethyst.woff);
+}
+
+.custom-logo {
+	height: 25px;
+	width: auto;
+	min-width: 200px;
+	}
+
+.site-title {
+	position: absolute;
+	font-size: 42px;
+	font-family: MyAmethyst;
+	margin: auto;
+}
+
+.site-description {
+	display: none;
+}
+
+.sticky-header {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 999;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+	transition: all 0.3s ease;
+	transform:translate(0, 5s);
+}
+
+.navbar {
+		border-bottom: 1px solid rgba(0,0,0,0.15);
+		padding-right: 0;
+		padding-left: 0;
+}
+
+
+/* Social Icons */
+.social-menu-facebook {
+	width: 15px !important;
+	margin-right: 20px;
+}
+
+.social-menu-facebook a:hover {
+	color: #4B6F93 !important;
+}
+
+.social-menu-twitter {
+	width: 15px !important;
+	margin-right: 20px;
+}
+
+.social-menu-twitter a:hover {
+	color: #46D4FE !important;
+}
+
+.social-menu-instagram{
+	width: 15px !important;
+}
+
+.social-menu-instagram a:hover {
+	color: #3F729B !important;
+}
+
+.social-icons {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding-left: 25px;
+}
+
+body.page-id-3235 .social-icons .navbar-toggler-icon #navbarToggler{ color: white!important; }
+body.page-id-3235 .navbar{ background-color: rgba(255, 255, 255, 0.07)!important; }
+
+@media only screen and (max-width: 768px) {
+
+	.social-menu {
+		display: none;
+	}
+}
+
+/* Admin Bar Fix */
+@media screen and (min-width: 783px) {
+  .admin-bar .sticky-header {
+    top: 32px;
+ 	}
+}
+
+/////////////// Test Menu //////////////////
+

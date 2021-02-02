@@ -1,0 +1,95 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Montserrat, sans-serif;
+	clear: both;
+}
+
+h1 {
+	font-size: 2.1rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.3rem;
+}
+
+h5 {
+	font-size: 0.9rem;
+}
+
+h6 {
+	font-size: 0.6rem;
+}
+
+.entry-title {
+	text-align: center;
+	letter-spacing: 1.3px;
+	margin: 0 0 20px;
+}
+
+.blog-title {
+	text-align: left;
+	letter-spacing: 1.3px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.entry-meta {
+	font-family: Opensans, sans-serif;
+	font-size: 12px;
+	text-align: left;
+
+		li {
+			display: inline;
+			list-style-type: none;
+		}
+	}
+
+.meta-date:after {
+		content: '-';
+		padding: 0 6px;
+}
+
+.meta-comments:before {
+		content: '-';
+		padding: 0 6px;
+}
+
+.wp-block-separator {
+  	width: 100px;
+	margin-top: 2em;
+}
+
+.widget-title {
+	display: block;
+	line-height: 1;
+	font-size: 18px;
+	font-weight: 400;
+	color: #333;
+	border-width: 0 0 0 3px;
+	border-style: solid;
+	border-color: #F1A05A;
+	letter-spacing: 1px;
+	padding-left: 15px;
+	margin: 0 0 20px;
+}
+
+.single .blog-card-title {
+	font-size: 34px;
+	padding: 0 0 20px;
+	margin: 0 0 15px;
+	border-bottom: 1px solid #f1f1f1;
+	letter-spacing: 0.6px;
+}

@@ -1,0 +1,30 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+	-webkit-font-smoothing: antialiased;
+	display: block;
+}
+
+.container {
+	width: $size__site-main-px;
+	max-width: $size__site-main;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	padding: 0;
+}
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+#wrapper {
+	padding-bottom: 3.5rem;
+}
+
+.row {
+	padding: 0;
+}
