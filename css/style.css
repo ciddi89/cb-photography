@@ -760,7 +760,7 @@ body.page-id-3235 .site-footer {
 *------------------------------------*/
 @media only screen and (max-width: 768px) {
   .site-footer {
-    height: 100%;
+    bottom: 0;
     padding-bottom: 0.8rem;
   }
   footer .site-info a {
