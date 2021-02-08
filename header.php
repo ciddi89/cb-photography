@@ -20,7 +20,7 @@
 
 				<header id="masthead" class="">
 
-					<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+					<nav class="navbar navbar-expand-md navbar-light" role="navigation">
   						<div class="container">
       							<!-- Brand and toggle get grouped for better mobile display -->
   								<?php if( has_custom_logo()) {
@@ -31,31 +31,31 @@
 								if ( $cb_photography_description || is_customize_preview() ) :?>
 								<p class="site-description"><?php echo $cb_photography_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 								<?php endif; } ?>
-				    					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-				    						<span class="navbar-toggler-icon"></span>
-										</button>
-							
-        									<?php
-        										wp_nav_menu( array(
-        									    	'theme_location'    => 'menu-1',
-        									    	'depth'             => 2,
-        									    	'container'         => 'div',
-        									    	'container_class'   => 'collapse navbar-collapse',
-        									    	'container_id'      => 'navbarToggler',
-        									    	'menu_class'        => 'navbar-nav ml-auto',
-        									    	'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-        									    	'walker'            => new WP_Bootstrap_Navwalker(),
-       											) );
-											?>
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            							<span class="navbar-toggler-icon"></span>
+        							</button>
+        
+        								<div class="collapse navbar-collapse" id="main-menu">
+            								<?php
+            								wp_nav_menu(array(
+            								    'theme_location' => 'menu-1',
+            								    'container' => false,
+            								    'menu_class' => '',
+            								    'fallback_cb' => '__return_false',
+            								    'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+            								    'depth' => 2,
+            								    'walker' => new bootstrap_5_wp_nav_menu_walker()
+            								));
+            								?>
 		
-										<div id="socialmenu" class="social-menu">
-											<ul class="social-icons">
-													<li class="social-menu-twitter"><a href="https://twitter.com/ciddi89" target="_blank"><i class="fab fa-twitter"></i></a></li>
-													<li class="social-menu-facebook"><a href="https://facebook.com/photobc2017" target="_blank"><i class="fab fa-facebook"></i></a></li>
-													<li class="social-menu-instagram"><a href="https://instagram.com/christian_behrends_89" target="_blank"><i class="fab fa-instagram"></i></a></li>
-											</ul>			
-							</div>
-						</div>
+												<div id="socialmenu" class="social-menu">
+													<ul class="social-icons">
+														<li class="social-menu-twitter"><a href="https://twitter.com/ciddi89" target="_blank"><i class="fab fa-twitter"></i></a></li>
+														<li class="social-menu-facebook"><a href="https://facebook.com/photobc2017" target="_blank"><i class="fab fa-facebook"></i></a></li>
+														<li class="social-menu-instagram"><a href="https://instagram.com/christian_behrends_89" target="_blank"><i class="fab fa-instagram"></i></a></li>
+													</ul>			
+												</div>
+										</div>
 					</nav>
 				</header><!-- #masthead -->
 
