@@ -1348,23 +1348,14 @@ body.page-id-3235 a {
   display: none;
 }
 
-.sticky-header {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 999;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: translate(0, 5s);
-          transform: translate(0, 5s);
-}
-
 .navbar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding-right: 0;
   padding-left: 0;
+}
+
+body.page-id-3235 .navbar {
+  background: rgba(0, 0, 0, 0.07);
 }
 
 /* Social Icons */
@@ -1403,7 +1394,7 @@ body.page-id-3235 a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding-left: 25px;
+  padding: 0;
 }
 
 body.page-id-3235 .social-icons {
@@ -1412,12 +1403,6 @@ body.page-id-3235 .social-icons {
 
 body.page-id-3235 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.6) !important;
-}
-
-@media only screen and (max-width: 720px) {
-  .social-menu {
-    display: none;
-  }
 }
 
 /* Admin Bar Fix */
@@ -1817,6 +1802,12 @@ a.nav-link {
 .footer-menu a {
   padding-left: 4px;
   padding-right: 4px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    padding-right: 50px;
+  }
 }
 
 /* Posts and pages

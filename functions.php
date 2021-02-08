@@ -205,6 +205,9 @@ function load_css()
 
     wp_register_style('fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/all.css', array(), false, 'all');
 	wp_enqueue_style('fontawesome');
+
+	wp_register_style('hamburgers', get_template_directory_uri() . '/css/hamburgers.css', array(), false, 'all');
+	wp_enqueue_style('hamburgers');
 	
 }
 add_action('wp_enqueue_scripts','load_css');
@@ -227,15 +230,22 @@ remove_filter( 'the_content', 'wpautop' );
 
 //Scroll to top
 function cb_photography_scroll_to_top_js() {
- wp_enqueue_script( 'cb-photography-scroll-to-top', get_stylesheet_directory_uri() . '/js/scroll-to-top.js', array( 'jquery' ), '1.0', true );
+ wp_enqueue_script( 'cb-photography-scroll-to-top', get_template_directory_uri() . '/js/scroll-to-top.js');
 }
 add_action( 'wp_enqueue_scripts', 'cb_photography_scroll_to_top_js' );
+
+//Hamburger Menu
+function cb_photography_hamburgers_js() {
+	wp_enqueue_script( 'cb-photography-hamburgers', get_template_directory_uri() . '/js/hamburgers.js', array('jquery'), false, false);
+}
+add_action( 'wp_enqueue_scripts', 'cb_photography_hamburgers_js' );
 
 //DashIcons
 function load_dashicons_front_end() {
 wp_enqueue_style( 'dashicons' );
 }
 add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+
 
 /** 
 //StickyHeader

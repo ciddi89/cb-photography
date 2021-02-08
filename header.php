@@ -31,9 +31,10 @@
 								if ( $cb_photography_description || is_customize_preview() ) :?>
 								<p class="site-description"><?php echo $cb_photography_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 								<?php endif; } ?>
-									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-            							<span class="navbar-toggler-icon"></span>
-        							</button>
+									<div class="menu-btn" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+										<div class="menu-btn__burger"></div>
+											
+        							</div>
         
         								<div class="collapse navbar-collapse" id="main-menu">
             								<?php
