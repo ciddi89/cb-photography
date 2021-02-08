@@ -1198,7 +1198,7 @@ h6 {
 
 .wp-block-separator {
   width: 100px;
-  margin-top: 2em;
+  margin: auto;
 }
 
 .widget-title {
